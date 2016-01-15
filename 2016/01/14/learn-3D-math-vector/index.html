@@ -28,7 +28,7 @@
 
 
 
-  <meta name="keywords" content="命运," />
+  <meta name="keywords" content="图形学," />
 
 
 
@@ -37,19 +37,31 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="无题这段时间发生了很多事情，让我开始正式的思考自己的将来，我原以为人生就是这样一步步的走下去，让妻儿有个温暖的家，让父母有个放心的儿子。可是在突如其来的风险面前，一切都是那么的遥远。现在我不能再优哉游哉，慢慢的走到理想的位置。时不我待，要赢得更好的生活，现在，就是开始。
-一直以来我都明白，作为一个开发人员，自己还有很多不足之处，会的东西虽然看起来还可以，但是杂而不精，基础薄弱。正所谓万丈高楼平地起">
+<meta name="description" content="向量向量是高中数学解析几何中的基本概念，不过我差不多都还给老师了。这里温习一下向量的各种运算法则，并试着总结书中涉及的几何意义：
+
+ 向量大小（长度或模）
+
+向量的大小也常被称为长度或模，在向量的基本表示方法（如 [3, 4] ）中并不能直接获得，所以需要计算。向量的模的计算公式为：
+$$|A| = |[x, y, \cdots ,z]| = \sqrt{x^2 + y^2 +cdots + z^">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一些话">
-<meta property="og:url" content="http://yoursite.com/2016/01/14/fate/index.html">
+<meta property="og:title" content="向量">
+<meta property="og:url" content="http://yoursite.com/2016/01/14/learn-3D-math-vector/index.html">
 <meta property="og:site_name" content="nevermore">
-<meta property="og:description" content="无题这段时间发生了很多事情，让我开始正式的思考自己的将来，我原以为人生就是这样一步步的走下去，让妻儿有个温暖的家，让父母有个放心的儿子。可是在突如其来的风险面前，一切都是那么的遥远。现在我不能再优哉游哉，慢慢的走到理想的位置。时不我待，要赢得更好的生活，现在，就是开始。
-一直以来我都明白，作为一个开发人员，自己还有很多不足之处，会的东西虽然看起来还可以，但是杂而不精，基础薄弱。正所谓万丈高楼平地起">
-<meta property="og:updated_time" content="2016-01-14T09:26:30.650Z">
+<meta property="og:description" content="向量向量是高中数学解析几何中的基本概念，不过我差不多都还给老师了。这里温习一下向量的各种运算法则，并试着总结书中涉及的几何意义：
+
+ 向量大小（长度或模）
+
+向量的大小也常被称为长度或模，在向量的基本表示方法（如 [3, 4] ）中并不能直接获得，所以需要计算。向量的模的计算公式为：
+$$|A| = |[x, y, \cdots ,z]| = \sqrt{x^2 + y^2 +cdots + z^">
+<meta property="og:updated_time" content="2016-01-14T10:11:39.594Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一些话">
-<meta name="twitter:description" content="无题这段时间发生了很多事情，让我开始正式的思考自己的将来，我原以为人生就是这样一步步的走下去，让妻儿有个温暖的家，让父母有个放心的儿子。可是在突如其来的风险面前，一切都是那么的遥远。现在我不能再优哉游哉，慢慢的走到理想的位置。时不我待，要赢得更好的生活，现在，就是开始。
-一直以来我都明白，作为一个开发人员，自己还有很多不足之处，会的东西虽然看起来还可以，但是杂而不精，基础薄弱。正所谓万丈高楼平地起">
+<meta name="twitter:title" content="向量">
+<meta name="twitter:description" content="向量向量是高中数学解析几何中的基本概念，不过我差不多都还给老师了。这里温习一下向量的各种运算法则，并试着总结书中涉及的几何意义：
+
+ 向量大小（长度或模）
+
+向量的大小也常被称为长度或模，在向量的基本表示方法（如 [3, 4] ）中并不能直接获得，所以需要计算。向量的模的计算公式为：
+$$|A| = |[x, y, \cdots ,z]| = \sqrt{x^2 + y^2 +cdots + z^">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -59,7 +71,7 @@
   };
 </script>
 
-  <title> 一些话 | nevermore </title>
+  <title> 向量 | nevermore </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -158,7 +170,7 @@
           
           
             
-              一些话
+              向量
             
           
         </h1>
@@ -167,7 +179,7 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2016-01-14T16:11:00+08:00" content="2016-01-14">
+          <time itemprop="dateCreated" datetime="2016-01-14T17:46:57+08:00" content="2016-01-14">
             2016-01-14
           </time>
         </span>
@@ -186,9 +198,12 @@
       
 
       
-        <span itemprop="articleBody"><h1 id="u65E0_u9898"><a href="#u65E0_u9898" class="headerlink" title="无题"></a>无题</h1><p>这段时间发生了很多事情，让我开始正式的思考自己的将来，我原以为人生就是这样一步步的走下去，让妻儿有个温暖的家，让父母有个放心的儿子。可是在突如其来的风险面前，一切都是那么的遥远。现在我不能再优哉游哉，慢慢的走到理想的位置。时不我待，要赢得更好的生活，现在，就是开始。</p>
-<p>一直以来我都明白，作为一个开发人员，自己还有很多不足之处，会的东西虽然看起来还可以，但是杂而不精，基础薄弱。正所谓万丈高楼平地起，现在要做的事情有很多，可能一时看不出回报，但是我相信时间是最好的证明。</p>
-<p>自勉。</p>
+        <span itemprop="articleBody"><h1 id="u5411_u91CF"><a href="#u5411_u91CF" class="headerlink" title="向量"></a>向量</h1><p>向量是高中数学解析几何中的基本概念，不过我差不多都还给老师了。这里温习一下向量的各种运算法则，并试着总结书中涉及的几何意义：</p>
+<blockquote>
+<p> 向量大小（长度或模）</p>
+</blockquote>
+<p>向量的大小也常被称为长度或模，在向量的基本表示方法（如 <code>[3, 4]</code> ）中并不能直接获得，所以需要计算。向量的模的计算公式为：</p>
+<p>$$|A| = |[x, y, \cdots ,z]| = \sqrt{x^2 + y^2 +<br>cdots + z^2}$$</p>
 </span>
       
     </div>
@@ -197,7 +212,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/命运/" rel="tag">#命运</a>
+            <a href="/tags/图形学/" rel="tag">#图形学</a>
           
         </div>
       
@@ -206,13 +221,11 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/01/14/learn-3D-math-vector/" rel="prev">向量</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/14/learn-3D-math-start/" rel="next">起点</a>
+              <a href="/2016/01/14/fate/" rel="next">一些话</a>
             
           </div>
         </div>
@@ -316,7 +329,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u65E0_u9898"><span class="nav-number">1.</span> <span class="nav-text">无题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u5411_u91CF"><span class="nav-number">1.</span> <span class="nav-text">向量</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
