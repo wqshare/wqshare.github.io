@@ -28,7 +28,7 @@
 
 
 
-  <meta name="keywords" content="命运," />
+  <meta name="keywords" content="vim," />
 
 
 
@@ -37,19 +37,33 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="无题这段时间发生了很多事情，让我开始正式的思考自己的将来，我原以为人生就是这样一步步的走下去，让妻儿有个温暖的家，让父母有个放心的儿子。可是在突如其来的风险面前，一切都是那么的遥远。现在我不能再优哉游哉，慢慢的走到理想的位置。时不我待，要赢得更好的生活，现在，就是开始。
-一直以来我都明白，作为一个开发人员，自己还有很多不足之处，会的东西虽然看起来还可以，但是杂而不精，基础薄弱。正所谓万丈高楼平地起">
+<meta name="description" content="最近配置Vim，由于以前的vimrc早已丢失，只好重新配置一份，此为题外话，略过不提…
+在Vim中，可以选择开启高亮当前行，这是一个很不错的特性。开启它也很简单，只需要在vimrc中加入这么一行：1set cursorline
+或者1set cul
+即可。
+在gvim中，这样配置一般都能起作用，你会看到当前行被高亮了。但是在终端中，却很可能会出现问题，如果你发现本该被高亮的行没有高亮，而行底部却出">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一些话">
-<meta property="og:url" content="http://yoursite.com/2016/01/14/fate/index.html">
+<meta property="og:title" content="Vim高亮当前行（显示为下划线）的解决方案">
+<meta property="og:url" content="http://yoursite.com/2016/06/26/config-xterm-256color-for-vim/index.html">
 <meta property="og:site_name" content="nevermore">
-<meta property="og:description" content="无题这段时间发生了很多事情，让我开始正式的思考自己的将来，我原以为人生就是这样一步步的走下去，让妻儿有个温暖的家，让父母有个放心的儿子。可是在突如其来的风险面前，一切都是那么的遥远。现在我不能再优哉游哉，慢慢的走到理想的位置。时不我待，要赢得更好的生活，现在，就是开始。
-一直以来我都明白，作为一个开发人员，自己还有很多不足之处，会的东西虽然看起来还可以，但是杂而不精，基础薄弱。正所谓万丈高楼平地起">
-<meta property="og:updated_time" content="2016-01-14T09:26:30.650Z">
+<meta property="og:description" content="最近配置Vim，由于以前的vimrc早已丢失，只好重新配置一份，此为题外话，略过不提…
+在Vim中，可以选择开启高亮当前行，这是一个很不错的特性。开启它也很简单，只需要在vimrc中加入这么一行：1set cursorline
+或者1set cul
+即可。
+在gvim中，这样配置一般都能起作用，你会看到当前行被高亮了。但是在终端中，却很可能会出现问题，如果你发现本该被高亮的行没有高亮，而行底部却出">
+<meta property="og:image" content="http://yoursite.com/images/underline.png">
+<meta property="og:image" content="http://yoursite.com/images/opt.png">
+<meta property="og:image" content="http://yoursite.com/images/color.png">
+<meta property="og:image" content="http://yoursite.com/images/error.png">
+<meta property="og:image" content="http://yoursite.com/images/final.png">
+<meta property="og:updated_time" content="2016-06-26T10:34:34.599Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一些话">
-<meta name="twitter:description" content="无题这段时间发生了很多事情，让我开始正式的思考自己的将来，我原以为人生就是这样一步步的走下去，让妻儿有个温暖的家，让父母有个放心的儿子。可是在突如其来的风险面前，一切都是那么的遥远。现在我不能再优哉游哉，慢慢的走到理想的位置。时不我待，要赢得更好的生活，现在，就是开始。
-一直以来我都明白，作为一个开发人员，自己还有很多不足之处，会的东西虽然看起来还可以，但是杂而不精，基础薄弱。正所谓万丈高楼平地起">
+<meta name="twitter:title" content="Vim高亮当前行（显示为下划线）的解决方案">
+<meta name="twitter:description" content="最近配置Vim，由于以前的vimrc早已丢失，只好重新配置一份，此为题外话，略过不提…
+在Vim中，可以选择开启高亮当前行，这是一个很不错的特性。开启它也很简单，只需要在vimrc中加入这么一行：1set cursorline
+或者1set cul
+即可。
+在gvim中，这样配置一般都能起作用，你会看到当前行被高亮了。但是在终端中，却很可能会出现问题，如果你发现本该被高亮的行没有高亮，而行底部却出">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -59,7 +73,7 @@
   };
 </script>
 
-  <title> 一些话 | nevermore </title>
+  <title> Vim高亮当前行（显示为下划线）的解决方案 | nevermore </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -158,7 +172,7 @@
           
           
             
-              一些话
+              Vim高亮当前行（显示为下划线）的解决方案
             
           
         </h1>
@@ -167,8 +181,8 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2016-01-14T16:11:00+08:00" content="2016-01-14">
-            2016-01-14
+          <time itemprop="dateCreated" datetime="2016-06-26T18:34:34+08:00" content="2016-06-26">
+            2016-06-26
           </time>
         </span>
 
@@ -186,9 +200,18 @@
       
 
       
-        <span itemprop="articleBody"><h1 id="u65E0_u9898"><a href="#u65E0_u9898" class="headerlink" title="无题"></a>无题</h1><p>这段时间发生了很多事情，让我开始正式的思考自己的将来，我原以为人生就是这样一步步的走下去，让妻儿有个温暖的家，让父母有个放心的儿子。可是在突如其来的风险面前，一切都是那么的遥远。现在我不能再优哉游哉，慢慢的走到理想的位置。时不我待，要赢得更好的生活，现在，就是开始。</p>
-<p>一直以来我都明白，作为一个开发人员，自己还有很多不足之处，会的东西虽然看起来还可以，但是杂而不精，基础薄弱。正所谓万丈高楼平地起，现在要做的事情有很多，可能一时看不出回报，但是我相信时间是最好的证明。</p>
-<p>自勉。</p>
+        <span itemprop="articleBody"><p>最近配置Vim，由于以前的vimrc早已丢失，只好重新配置一份，此为题外话，略过不提…</p>
+<p>在Vim中，可以选择开启<code>高亮当前行</code>，这是一个很不错的特性。开启它也很简单，只需要在vimrc中加入这么一行：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> cursorline</span><br></pre></td></tr></table></figure></p>
+<p>或者<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> cul</span><br></pre></td></tr></table></figure></p>
+<p>即可。</p>
+<p>在gvim中，这样配置一般都能起作用，你会看到当前行被高亮了。但是在终端中，却很可能会出现问题，如果你发现本该被高亮的行没有高亮，而行底部却出现了一条下划线的话(如下图)，就需要做一些额外的配置了。</p>
+<p><img src="/images/underline.png" alt=""></p>
+<p>Vim中有一个命令叫<code>highlight</code>,通过它可以自定义或者查看很多元素的配色方案，具体的作用可以自行<code>:help highlight</code>查看，我们用它来对高亮行做一些设置。<br>在vimrc中加入:<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hi CursorLine term=bold cterm=bold ctermbg=Red</span><br></pre></td></tr></table></figure></p>
+<p>别忘了加载配置。<br>嗯，当前行不仅被高亮成了红色，而且还变成了粗体，这就是命令中<code>bold</code>和<code>Red</code>的效果，其中<code>cterm=bold</code>就是指定在终端中被高亮的行变为粗体，而 <code>ctermbg=Red</code>就是指定高亮行在终端中的背景色，其他的选项还有<code>ctermfg(前景色)</code>，<code>guibg(gvim中的背景色)</code>等等，这里就不赘述了。<br>这里是<code>term=</code>或<code>cterm=</code>等可选的选项：<br><img src="/images/opt.png" alt=""><br>这里是<code>ctermbg=</code>可选的颜色:<br><img src="/images/color.png" alt=""><br>前面的数字有什么用，我就不细说了。这里可以看到，有若干定义好的颜色可供选择，比如上面<code>ctermbg=Red</code>就是选择了这里的红色。<br>可能很多人和我一样，每种颜色都试了那么一下，却发现全部都不满意，自然而然的会想到，能否用RGB的形式自定义颜色呢？让我们先来试验一下，修改命令为:<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hi CursorLine term=bold cterm=bold ctermbg=<span class="preprocessor">#FFD4E4</span></span><br></pre></td></tr></table></figure></p>
+<p>很可惜，你会得到vim的error信息：<br><img src="/images/error.png" alt=""><br>难道就没办法自定义颜色了吗？别急，虽然无法自定义颜色，却可以让可选择的颜色多一些，Vim中默认的这几种颜色是为8位色终端定义的，应该是为了兼容一些很原始的环境。比如我的环境是<code>CentOS Linux release 7.2.1511 (Core)</code>，不带图形界面。CentOS的终端默认开启的是8位色模式，查看自己的终端所处的颜色模式，可以在shell中输入:<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="variable">$TERM</span></span><br></pre></td></tr></table></figure></p>
+<p>如果打印的结果中不含有<code>256color</code>，就表明你的终端并没有开启256色模式，可供选择的颜色可能不足。我们可以将终端配置为256色模式，以我的环境为例，执行以下命令:<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo sh -c <span class="string">"echo 'export TERM=xterm-256color' &gt;&gt; /etc/profile"</span></span><br></pre></td></tr></table></figure></p>
+<p>回到Vim,执行:<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:hi CursorLine term=bold cterm=bold ctermbg=<span class="number">237</span></span><br></pre></td></tr></table></figure></p>
+<p>高亮行的背景变成了淡淡的灰色<br><img src="/images/final.png" alt=""><br>这里的<code>ctermbg=237</code>是256色中某个颜色的编号，可以查询这里<a href="https://upload.wikimedia.org/wikipedia/en/1/15/Xterm_256color_chart.svg" target="_blank" rel="external">256色展示</a></p>
 </span>
       
     </div>
@@ -197,7 +220,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/命运/" rel="tag">#命运</a>
+            <a href="/tags/vim/" rel="tag">#vim</a>
           
         </div>
       
@@ -206,13 +229,11 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/01/14/learn-3D-math-vector/" rel="prev">向量</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/14/learn-3D-math-start/" rel="next">起点</a>
+              <a href="/2016/01/14/learn-3D-math-vector/" rel="next">向量</a>
             
           </div>
         </div>
@@ -288,7 +309,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -316,7 +337,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u65E0_u9898"><span class="nav-number">1.</span> <span class="nav-text">无题</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>

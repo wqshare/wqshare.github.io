@@ -40,7 +40,7 @@
 <meta name="description">
 <meta property="og:type" content="website">
 <meta property="og:title" content="nevermore">
-<meta property="og:url" content="http://yoursite.com/tags/命运/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/2016/06/index.html">
 <meta property="og:site_name" content="nevermore">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
@@ -55,7 +55,7 @@
   };
 </script>
 
-  <title> 标签: 命运 | nevermore </title>
+  <title> 归档 | nevermore </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -73,7 +73,7 @@
 
 
 
-  <div class="container one-column ">
+  <div class="container one-column  page-archive ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -142,15 +142,32 @@
       <div class="main-inner">
         <div id="content" class="content"> 
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        命运
-        <small>标签</small>
-      </h2>
-    </div>
+  <section id="posts" class="posts-collapse">
+    <span class="archive-move-on"></span>
+
+    <span class="archive-page-counter">
+      
+      
+      
+        
+      
+      嗯..! 目前共计 3 篇日志。 继续努力。
+    </span>
 
     
+
+      
+      
+      
+
+      
+        
+        <div class="collection-title">
+          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
+        </div>
+      
+      
+
       
 
   <article class="post post-type-normal"itemscope itemtype="http://schema.org/Article">
@@ -158,24 +175,27 @@
 
       <h1 class="post-title">
         
-            <a class="post-title-link" href="/2016/01/14/fate/" itemprop="url">
-              <span itemprop="name">一些话</span>
+            <a class="post-title-link" href="/2016/06/26/config-xterm-256color-for-vim/" itemprop="url">
+              <span itemprop="name">Vim高亮当前行（显示为下划线）的解决方案</span>
             </a>
         
       </h1>
 
       <div class="post-meta">
-        <time class="post-time" datetime="2016-01-14T08:11:00.000Z" itemprop="dateCreated" content="2016-01-14"> 01-14 </time>
+        <time class="post-time" datetime="2016-06-26T10:34:34.000Z" itemprop="dateCreated" content="2016-06-26"> 06-26 </time>
       </div>
 
     </header>
   </article>
 
 
+
     
-  </div>
+
+  </section>
 
   
+
  </div>
 
         
@@ -221,7 +241,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -318,6 +338,12 @@
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   
+  
+    <script type="text/javascript" id="motion.page.archive">
+      $('.archive-year').velocity('transition.slideLeftIn');
+    </script>
+  
+
 
   <script type="text/javascript">
     $(document).ready(function () {
